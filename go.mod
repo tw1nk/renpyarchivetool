@@ -4,6 +4,7 @@ go 1.19
 
 require (
 	github.com/gabriel-vasile/mimetype v1.4.1
+	github.com/mattn/go-zglob v0.0.4
 	github.com/nlpodyssey/gopickle v0.2.0
 )
 

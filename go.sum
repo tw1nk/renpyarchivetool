@@ -1,5 +1,7 @@
 github.com/gabriel-vasile/mimetype v1.4.1 h1:TRWk7se+TOjCYgRth7+1/OYLNiRNIotknkFtf/dnN7Q=
 github.com/gabriel-vasile/mimetype v1.4.1/go.mod h1:05Vi0w3Y9c/lNvJOdmIwvrrAhX3rYhfQQCaf9VJcv7M=
+github.com/mattn/go-zglob v0.0.4 h1:LQi2iOm0/fGgu80AioIJ/1j9w9Oh+9DZ39J4VAGzHQM=
+github.com/mattn/go-zglob v0.0.4/go.mod h1:MxxjyoXXnMxfIpxTK2GAkw1w8glPsQILx3N5wrKakiY=
 github.com/tw1nk/gopickle v0.0.0-20230217010700-f85a1e5d15f7 h1:3EkOZ6GXAh175O+8i33mQbrFzk42dq3Tbkn1egiqEbI=
 github.com/tw1nk/gopickle v0.0.0-20230217010700-f85a1e5d15f7/go.mod h1:YIUwjJ2O7+vnBsxUN+MHAAI3N+adqEGiw+nDpwW95bY=
 golang.org/x/net v0.0.0-20220624214902-1bab6f366d9e h1:TsQ7F31D3bUCLeqPT0u+yjp1guoArKaNKmCr22PYgTQ=
