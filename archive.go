@@ -30,6 +30,15 @@ type Index struct {
 	Prefix []byte
 }
 
+func Load(fileName string) (*RenPyArchive, error) {
+	rp := &RenPyArchive{}
+	if err := rp.Load(fileName); err != nil {
+		return nil, err
+	}
+
+	return rp, nil
+}
+
 func (rp *RenPyArchive) Load(fileName string) error {
 	var err error
 	rp.file = fileName
