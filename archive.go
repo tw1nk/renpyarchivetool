@@ -6,7 +6,6 @@ import (
 	"compress/zlib"
 	"fmt"
 	"io"
-	"log"
 	"os"
 	"strconv"
 	"strings"
@@ -48,8 +47,6 @@ func (rp *RenPyArchive) Load(fileName string) error {
 	if err := rp.getVersion(); err != nil {
 		return fmt.Errorf("failed to get version. %v", err)
 	}
-
-	log.Println("archive version:", rp.version)
 
 	if err := rp.extractIndexes(); err != nil {
 		return fmt.Errorf("failed to extract indexes. %v", err)
@@ -251,7 +248,11 @@ func (rp *RenPyArchive) extractIndexes() error {
 		if indexData.Len() > 2 {
 			prefix, ok := indexData.Get(2).(string)
 			if !ok {
-				return fmt.Errorf("not a string")
+				prefixBytes, ok := indexData.Get(2).([]byte)
+				if !ok {
+					return fmt.Errorf("prefix not not a string or []byte. %T", indexData.Get(2))
+				}
+				prefix = string(prefixBytes)
 			}
 			indexes[key].Prefix = []byte(prefix)
 		}
