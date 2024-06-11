@@ -69,7 +69,7 @@ func extractFile(params argParams, filename string) {
 	}
 
 	if params.list {
-		log.Println("Files in archive:")
+		log.Println("Files in archive:", filename)
 		for _, fileName := range archive.FileNames() {
 			log.Println("\t", fileName)
 		}
