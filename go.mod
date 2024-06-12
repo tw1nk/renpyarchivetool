@@ -3,11 +3,17 @@ module github.com/tw1nk/renpyarchivetool
 go 1.19
 
 require (
-	github.com/gabriel-vasile/mimetype v1.4.1
+	github.com/gabriel-vasile/mimetype v1.4.4
 	github.com/mattn/go-zglob v0.0.4
-	github.com/nlpodyssey/gopickle v0.2.0
+	github.com/nlpodyssey/gopickle v0.3.0
+	github.com/spf13/cobra v1.8.0
 )
 
-require golang.org/x/net v0.0.0-20220624214902-1bab6f366d9e // indirect
+require (
+	github.com/inconshreveable/mousetrap v1.1.0 // indirect
+	github.com/spf13/pflag v1.0.5 // indirect
+	golang.org/x/net v0.26.0 // indirect
+	golang.org/x/text v0.16.0 // indirect
+)
 
-replace github.com/nlpodyssey/gopickle => github.com/tw1nk/gopickle v0.0.0-20230217010700-f85a1e5d15f7
+//replace github.com/nlpodyssey/gopickle => github.com/tw1nk/gopickle v0.0.0-20230217010700-f85a1e5d15f7
