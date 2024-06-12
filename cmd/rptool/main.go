@@ -14,6 +14,7 @@ func main() {
 
 	rootCmd.AddCommand(extractCmd)
 	rootCmd.AddCommand(listCmd)
+	rootCmd.AddCommand(mountCmd)
 
 	if err := rootCmd.Execute(); err != nil {
 		panic(err)

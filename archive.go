@@ -101,6 +101,10 @@ func (rp *RenPyArchive) FileNames() []string {
 	return out
 }
 
+func (rp *RenPyArchive) Indexes() map[string]*Index {
+	return rp.indexes
+}
+
 func (rp *RenPyArchive) Read(filename string) ([]byte, error) {
 
 	indexData, ok := rp.indexes[filename]
